@@ -1,0 +1,92 @@
+// JAVA -> INTRO
+JDK -> JRE ->  (JVM + libraries)
+Java is Platform independent, JVM is platform dependent
+JVM only understands -> bytecode (.class file) | given by javac - java compiler
+
+public static void main()
+
+WORA (Write Once Run Anywhere) -> client only needs JRE to run the bytecode
+
+// Variables -> java is a strongly types language
+1. numbers -> byte, short 2bytes, int 4bytes, long 8bytes | long l = 334234l; 
+2. decimals values -> float 4bytes, double 8bytes(default, high precision) | float f = 2.5f;
+3. characters -> '' 2bytes -> unicode | not ascii -> char c = 'k'
+4. boolean -> true | false | bool b = true;
+
+
+// Data Types
+byte b = 129; ??
+float f = 5.8; ??
+literals -> values assigned to the variables
+int i = 0b101; | binary format
+int h = 0x2df; | hex format
+int amount = 10_000; | we can use underscore just to readability
+
+/ Type Conversion and Type Casting
+byte b = 127;
+int a = 12;
+b = a ?? -> not allowed as we are putting int in byte -> but we can explicitly tell compiler to convert b = (byte)a -> if its a loss it on me | type casting | explicit conversion
+a = b | we can put a smaller item into bigger box | implicit conversion
+
+float f = 5.6f;
+int i = (int)f; | i = 5
+
+/ Type promotion
+byte a1=10;
+byte a2=30;
+int result = a1*a2; | type promotion
+
+
+// Operators
+/ Arithematic Operators
++ , - , / (quotient) , *, % (remainder)
+x+=2 | x = x + 2;
+x++ (post increment) ++x (pre increment) | behaves differently when we fetch the value 
+int num = x++; | num and x are not same -> fetch the value to num and then increment x with 1
+int num = ++x; | increment and then fetch the value to assignment num and x are same 
+x-- (post decrement) --x (pre decrement) 
+/ Relational Operators
+< > <= >= == != | returns boolean
+/ Logical Operators
+&& (and) , || (or) , !(not) : combines logics 
+
+// Conditional Statements
+if(x>10){
+    if(x>50){
+
+    }
+    else{
+
+    }
+}else if(x>5){
+
+}else{
+
+}
+/ Ternary Operator | if else in one line
+int result = (n%2==0) ? 10 : 20 ; | ( ? true : false)
+/ Switch Conditions
+switch(day){
+    case '1':
+        sout monday;
+        break; | important -> if absent it will execute all cases;
+    case '2':
+        sout tuesday;
+        break;
+    default:
+        sout error;
+} // comment in java
+
+// Loops
+initialize
+while(condition){
+    increment
+}
+
+do{
+    // it runs atleast once before checking the condition
+}while(condition)
+
+for(initialize, condition, increment){
+
+}
