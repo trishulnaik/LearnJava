@@ -1,0 +1,87 @@
+// Object Oriented Programming
+
+Object -> properties and behaviour
+we need Class(blueprint) to create a Object
+
+jvm creates the Object
+class Calc {
+    // properties
+    int a = 4;
+    // methods | actions
+    public int add(int num1, int num2){
+        return num1+num2
+    }
+}
+
+
+how to call the add methods -> create object instance
+Calc myCalc = new Calc();
+int result = myCalc.add(4,5);
+
+primitive variable vs reference variable
+
+JDK -> JRE -> loads classes, JVM 
+
+method overloading
+different parametes, same name | return type don't work, it should only be parameter difference
+
+Array int [] arr = {4,5,6} | int[] arr = new int[4];
+traversing of array from index 0 to .length
+
+2-D array 
+int[][] arr = new int[2][3];
+jagged array
+int[][] arr = new int[3][];
+arr[0] = new int[4];
+arr[1] = new int[5];
+ans so on
+
+Math.random()
+
+enhanced for loop | for each loop -> for(int num: nums){} 
+
+String -> double quotes
+String name = "Trishul"
+String is a class, it is not a primitive type
+
+we can only use string with + operator -> String concatenation
+Strings are immutable so you can't really change the string
+Heap -> String constant pool, because s1 == s2 should give false if there are different objects
+
+String Buffer (Thread Safe) | String Builder
+
+Encapsulation
+control access, getters and setters to access data
+private -> only access in the same class
+this keyword -> referes to the current object
+constructor -> it is a method with a same name as class
+every time you create a obj we call the constructor
+default | parameterized constructor
+public className(){
+
+}
+
+static variables will be shared by all the objects -> we don't need a object to be created to use the variable
+suggested to use to access using class
+JVM has a area where there are all the static variables
+public static name = "CompanyName";
+
+static method
+void static void show(){} -> we can only use static variable in the static methods
+static block
+static{
+    name = "CompanyName";
+} 
+we can initialize the static variable as it is only called once 
+
+JVM has a class loader and the object will be created
+Class.forName(className) -> loads the class -> static block gets called
+
+// Naming conventions
+class, interface -> capital
+methods, variables -> camel case
+constants -> UPPER case
+multipleWords -> camel case | constant multiple names: UPPER_CASE
+
+anonymous obj
+new A().show() -> only use once as we are not storing it to any reference variable

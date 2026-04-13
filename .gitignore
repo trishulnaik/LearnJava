@@ -1,2 +1,4 @@
 # Compiled Java bytecode
 *.class
+
+test.java
